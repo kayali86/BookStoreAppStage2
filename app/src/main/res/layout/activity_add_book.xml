@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mainLayoutStyle"
+    android:orientation="vertical"
+    tools:context=".AddBookActivity">
+    <EditText
+        android:id="@+id/book_name_edit"
+        style="@style/add_edit_text"
+        android:hint="@string/edit_book_name"
+        android:inputType="textCapWords" />
+
+    <LinearLayout
+        style="@style/add_edit_text"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/book_price_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="@string/edit_book_price"
+        android:maxLength="6"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/book_quantity_edit"
+        style="@style/add_edit_text"
+        android:hint="@string/edit_book_quantity"
+        android:maxLength="6"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/supplier_name_edit"
+        style="@style/add_edit_text"
+        android:hint="@string/edit_supplier_name"
+        android:inputType="textCapWords" />
+    <EditText
+        android:id="@+id/supplier_phone_edit"
+        style="@style/add_edit_text"
+        android:hint="@string/edit_supplier_phone"
+        android:maxLength="16"
+        android:inputType="number" />
+</LinearLayout>
